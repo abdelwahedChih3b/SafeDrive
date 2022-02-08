@@ -46,7 +46,7 @@ void setup() {
 void loop() {
   reading = analogRead(mq3);
   Serial.println(reading);
-  if (reading > 400)
+  if (reading > 500)
   {
     lightbuzz(4);
 

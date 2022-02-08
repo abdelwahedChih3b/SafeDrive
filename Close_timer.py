@@ -5,7 +5,7 @@ import cv2
 import cvzone
 from cvzone.FaceMeshModule import FaceMeshDetector
 
-cap = cv2.VideoCapture("video.mp4")
+cap = cv2.VideoCapture("vid5.mp4")
 detector = FaceMeshDetector(maxFaces = 1)
 idlist = [22,23,24,110,157,158,160,161,130,243,386,359,374,398] #386,374*/460,398 left eye ,
 while True :
@@ -38,6 +38,6 @@ while True :
         hightright,_ =detector.findDistance(rightext1,rightext2)
         print("left ratio",hightleft/lengthleft ,"right ration", hightright/lengthright)
     cv2.imshow("image",img)
-    cv2.waitKey(1)
+    cv2.waitKey(20)
 
 
